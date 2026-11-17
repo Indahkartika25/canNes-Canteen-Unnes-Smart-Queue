@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kantin FMIPA - canNes</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kantin-fmipa.css">
+</head>
+<body>
+
+    <main class="kantin-container">
+
+        <!-- BANNER FMIPA -->
+        <header class="fmipa-banner">
+
+            <a href="fmipa.html" class="back-button">
+                &#8592;
+            </a>
+
+            <img src="logo.png" class="cannes-logo" alt="canNes">
+
+        </header>
+
+
+        <!-- SEARCH -->
+        <section class="search-section">
+
+            <span class="search-icon">⌕</span>
+
+            <input
+                type="text"
+                id="search-kantin"
+                placeholder="Cari Kantin favorit mu!"
+            >
+
+        </section>
+
+
+        <!-- DAFTAR TENANT -->
+        <section class="tenant-section">
+
+            <div class="tenant-grid" id="tenant-grid">
+
+                <a href="#" class="tenant-card" data-name="kantin sekar melati">
+                    <img src="assets/tenant-1.jpg" alt="Kantin Sekar Melati">
+
+                    <h3>Kantin Sekar Melati</h3>
+                    <p>15-20 min siap</p>
+                </a>
+
+
+                <a href="#" class="tenant-card" data-name="kantin bu rina">
+                    <img src="assets/tenant-2.jpg" alt="Kantin Bu Rina">
+
+                    <h3>Kantin Bu Rina</h3>
+                    <p>15-20 min siap</p>
+                </a>
+
+
+                <a href="#" class="tenant-card" data-name="kantin sekar melati 2">
+                    <img src="assets/tenant-3.jpg" alt="Kantin Sekar Melati">
+
+                    <h3>Kantin Sekar Melati</h3>
+                    <p>15-20 min siap</p>
+                </a>
+
+
+                <a href="#" class="tenant-card" data-name="kantin sekar melati 3">
+                    <img src="assets/tenant-4.jpg" alt="Kantin Sekar Melati">
+
+                    <h3>Kantin Sekar Melati</h3>
+                    <p>15-20 min siap</p>
+                </a>
+
+
+                <a href="#" class="tenant-card" data-name="kantin fmipa 5">
+                    <img src="assets/tenant-5.jpg" alt="Kantin FMIPA">
+
+                    <h3>Kantin FMIPA</h3>
+                    <p>15-20 min siap</p>
+                </a>
+
+
+                <a href="#" class="tenant-card" data-name="kantin fmipa 6">
+                    <img src="assets/tenant-6.jpg" alt="Kantin FMIPA">
+
+                    <h3>Kantin FMIPA</h3>
+                    <p>15-20 min siap</p>
+                </a>
+
+            </div>
+
+            <p id="empty-message">
+                Kantin tidak ditemukan.
+            </p>
+
+        </section>
+<!-- TOMBOL PESANAN SAYA -->
+<div class="order-floating">
+    <button class="order-button" id="order-button">
+        <span>▤</span>
+        <small>Pesanan Saya</small>
+    </button>
+</div>
+
+        <!-- BOTTOM NAVIGATION -->
+        <nav class="bottom-nav">
+
+            <a href="home.html" class="nav-item">
+                <span class="nav-icon">♧</span>
+                <span>Beranda</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">♥</span>
+                <span>Favorit</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">🛒</span>
+                <span>Keranjang</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">▤</span>
+                <span>Riwayat</span>
+            </a>
+
+            <a href="akun.html" class="nav-item">
+                <span class="nav-icon">♟</span>
+                <span>Saya</span>
+            </a>
+
+        </nav>
+
+    </main>
+
+    <script src="kantin-fmipa.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,303 @@
+
+/* ==============================
+   RESET
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FFFFFF;
+}
+
+
+/* ==============================
+   MAIN CONTAINER
+============================== */
+
+.kantin-container {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    min-height: 100dvh;
+    margin: auto;
+    position: relative;
+    background: white;
+    padding-bottom: 90px;
+}
+
+
+/* ==============================
+   BANNER FMIPA
+============================== */
+
+.fmipa-banner {
+    width: 100%;
+    height: 195px;
+    position: relative;
+
+    background-image: url("assets/fmipa-banner.jpg");
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 0 0 18px 18px;
+}
+
+.back-button {
+    position: absolute;
+    top: 30px;
+    left: 22px;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background: white;
+
+    color: black;
+    font-size: 25px;
+    line-height: 1;
+    text-decoration: none;
+    padding: 0;
+
+    box-shadow: 1px 3px 5px #777;
+    z-index: 5;
+}
+
+.cannes-logo {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+
+    width: 48px;
+    height: 48px;
+
+    object-fit: contain;
+}
+
+
+/* ==============================
+   SEARCH
+============================== */
+
+.search-section {
+    height: 44px;
+    margin: -5px 10px 16px;
+
+    border-radius: 30px;
+    background: #DADADA;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 18px;
+    position: relative;
+    z-index: 3;
+}
+
+.search-icon {
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.search-section input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 12px;
+    font-style: italic;
+}
+
+.search-section input::placeholder {
+    color: #444;
+}
+
+
+/* ==============================
+   DAFTAR TENANT
+============================== */
+
+.tenant-section {
+    padding: 0 22px;
+}
+
+.tenant-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 24px;
+    row-gap: 28px;
+}
+
+.tenant-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.tenant-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
+
+    margin-bottom: 11px;
+}
+
+.tenant-card h3 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.tenant-card p {
+    font-size: 12px;
+    color: #555;
+}
+
+.tenant-card:active {
+    transform: scale(0.97);
+}
+
+
+/* ==============================
+   EMPTY SEARCH
+============================== */
+
+#empty-message {
+    display: none;
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+
+/* ==============================
+   BOTTOM NAVIGATION
+============================== */
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    max-width: 430px;
+    height: 75px;
+
+    background: #65A0E5;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+
+    z-index: 100;
+
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.nav-item {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    color: #111;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.nav-icon {
+    font-size: 22px;
+    line-height: 1;
+}
+
+.nav-item:active {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+/* ==============================
+   DESKTOP
+============================== */
+
+@media (min-width: 600px) {
+
+    body {
+        background: #E6E6E6;
+    }
+
+    .kantin-container {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+    }
+
+}
+.back-button:link,
+.back-button:visited,
+.back-button:hover,
+.back-button:active {
+    color: black;
+    text-decoration: none;
+}
+/* TOMBOL PESANAN SAYA */
+.order-floating {
+    position: fixed !important;
+    bottom: 88px !important;
+    right: max(24px, calc((100vw - 430px) / 2 + 24px)) !important;
+    z-index: 9999 !important;
+}
+
+.order-floating .order-button {
+    position: static !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.order-floating .order-button span {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid black;
+    font-size: 27px;
+}
+
+.order-floating .order-button small {
+    font-size: 10px;
+    font-weight: bold;
+}

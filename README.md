@@ -1,2 +1,19 @@
-# canNes-Canteen-Unnes-Smart-Queue
-Kantin UNNES Smart Queue adalah aplikasi pemesanan makanan dan minuman berbasis digital yang memudahkan mahasiswa melakukan pre-order, pembayaran, dan penjadwalan pengambilan pesanan. Aplikasi ini membantu mengurangi antrean serta mempermudah tenant dalam mengelola pesanan dan stok secara efisien. Pesan Lebih Awal, Ambil Lebih Cepat, Tanpa Antre!
+
+# canNes - Kantin UNNES Smart Queue
+
+Aplikasi pemesanan makanan dan minuman
+di lingkungan Universitas Negeri Semarang.
+
+## Teknologi
+- HTML
+- CSS
+- JavaScript
+- Progressive Web App (PWA)
+
+## Fitur
+- Pre-order makanan
+- Pemilihan kantin
+- Pembayaran digital
+- Smart Queue
+- QR Code
+- Notifikasi pesanan

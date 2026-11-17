@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Akun - canNes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="account-body">
+
+    <main class="account-container">
+
+        <!-- TOMBOL KEMBALI -->
+        <a href="home.html" class="account-back">
+            ←
+        </a>
+
+        <!-- LOGO -->
+        <div class="account-logo">
+            <img src="logo.png" alt="Logo canNes">
+        </div>
+
+        <!-- PROFIL PENGGUNA -->
+        <section class="profile-section">
+
+            <img src="assets/avatar.png"
+                 alt="Foto Profil"
+                 class="profile-avatar">
+
+            <div class="profile-info">
+                <h2>User</h2>
+                <p>+62 123 5678 9877</p>
+                <span class="member-label">Pelanggan setia</span>
+            </div>
+
+            <button class="settings-button"
+                    id="settings-button">
+                ⚙
+            </button>
+
+        </section>
+
+        <!-- MENU AKUN -->
+        <section class="account-menu">
+
+            <div class="account-menu-item">
+                <span class="account-menu-icon">✉</span>
+                <span>Email : kelompok09@students.unnes.ac.id</span>
+            </div>
+
+            <div class="account-menu-item" data-menu="Makanan Favorit">
+                <span class="account-menu-icon">♧</span>
+                <span>Makanan Favorit</span>
+            </div>
+
+            <div class="account-menu-item" data-menu="Tenant Favorit">
+                <span class="account-menu-icon"></span>
+                <span>Tenant Favorit</span>
+            </div>
+
+            <div class="account-menu-item" data-menu="Lokasi Saya">
+                <span class="account-menu-icon">♧</span>
+                <span>Lokasi Saya</span>
+            </div>
+
+            <div class="account-menu-item" data-menu="Bantuan">
+                <span class="account-menu-icon">☞</span>
+                <span>Bantuan</span>
+            </div>
+
+            <div class="account-menu-item" data-menu="Laporkan Masalah Aplikasi">
+                <span class="account-menu-icon"></span>
+                <span>Laporkan Masalah Aplikasi</span>
+            </div>
+
+        </section>
+
+        <!-- TOMBOL BAWAH -->
+        <section class="account-actions">
+
+            <a href="index.html" class="logout-button">
+                Log Out <span>⇥</span>
+            </a>
+
+            <button class="order-button" id="order-button">
+                <span>▤</span>
+                <small>Pesanan Saya</small>
+            </button>
+
+        </section>
+
+        <!-- BOTTOM NAVIGATION -->
+        <nav class="bottom-nav">
+
+            <a href="home.html" class="nav-item">
+                <span class="nav-icon">♧</span>
+                <span>Beranda</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">♥</span>
+                <span>Favorit</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">🛒</span>
+                <span>Keranjang</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">▤</span>
+                <span>Riwayat</span>
+            </a>
+
+            <a href="akun.html" class="nav-item active">
+                <span class="nav-icon">♟</span>
+                <span>Saya</span>
+            </a>
+
+        </nav>
+
+    </main>
+
+    <script src="akun.js"></script>
+
+</body>
+</html>

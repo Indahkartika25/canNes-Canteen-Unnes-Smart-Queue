@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beranda - canNes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home-body">
+
+    <main class="home-container">
+
+        <!-- HEADER -->
+        <header class="home-header">
+
+            <img src="logo.png" class="header-logo" alt="canNes">
+
+            <div class="header-actions">
+
+                <button class="header-icon" aria-label="Menu lainnya">
+                    •••
+                </button>
+
+                <button class="header-icon notification"
+                    aria-label="Notifikasi">
+                    ♧
+                </button>
+
+            </div>
+
+        </header>
+
+
+        
+
+<section class="hero-banner" id="hero-banner">
+
+    <div class="hero-track" id="hero-track">
+
+        <article class="hero-slide">
+            <img src="assets/menu-1.jpg" alt="Nasi Goreng">
+            <div class="hero-overlay">
+                <h1>Rekomendasi Menu Hari Ini</h1>
+                <p>Nasi Goreng Spesial</p>
+            </div>
+        </article>
+
+        <article class="hero-slide">
+            <img src="assets/menu-2.jpg" alt="Ayam Geprek">
+            <div class="hero-overlay">
+                <h1>Menu Favorit Mahasiswa</h1>
+                <p>Ayam Geprek Sambal Bawang</p>
+            </div>
+        </article>
+
+        <article class="hero-slide">
+            <img src="assets/menu-3.jpg" alt="Mie Ayam">
+            <div class="hero-overlay">
+                <h1>Enak dan Mengenyangkan</h1>
+                <p>Mie Ayam Spesial</p>
+            </div>
+        </article>
+
+        <article class="hero-slide">
+            <img src="assets/menu-4.jpg" alt="Sate">
+            <div class="hero-overlay">
+                <h1>Menu Pilihan Hari Ini</h1>
+                <p>Sate Ayam Sambal Kacang</p>
+            </div>
+        </article>
+
+    </div>
+
+    <div class="banner-indicators" id="banner-indicators">
+        <button class="active" data-slide="0"></button>
+        <button data-slide="1"></button>
+        <button data-slide="2"></button>
+        <button data-slide="3"></button>
+    </div>
+
+</section>
+
+
+
+        <!-- SEARCH FAKULTAS -->
+        <section class="search-section">
+
+            <span class="search-icon">⌕</span>
+
+            <input
+                type="text"
+                id="faculty-search"
+                placeholder="Cari Fakultas"
+            >
+
+        </section>
+
+
+        <!-- DAFTAR FAKULTAS -->
+        <section class="faculty-section">
+
+            <div class="faculty-list" id="faculty-list">
+
+                <!-- FMIPA -->
+                <article class="faculty-card fmipa"
+                    data-name="fmipa fakultas matematika ilmu pengetahuan alam">
+
+                    <div class="faculty-info">
+                        <span class="faculty-acronym">FMIPA</span>
+                        <span class="faculty-name">UNNES</span>
+                    </div>
+
+                </article>
+
+
+                <!-- TEKNIK -->
+                <article class="faculty-card teknik"
+                    data-name="teknik fakultas teknik">
+
+                    <div class="faculty-info">
+                        <span class="faculty-acronym">FT</span>
+                        <span class="faculty-name">UNNES</span>
+                    </div>
+
+                </article>
+
+
+                <!-- FEB -->
+                <article class="faculty-card feb"
+                    data-name="feb fakultas ekonomi bisnis">
+
+                    <div class="faculty-info">
+                        <span class="faculty-acronym">FEB</span>
+                        <span class="faculty-name">UNNES</span>
+                    </div>
+
+                </article>
+
+
+                <!-- FISIP -->
+                <article class="faculty-card fisip"
+                    data-name="fisip fakultas ilmu sosial ilmu politik">
+
+                    <div class="faculty-info">
+                        <span class="faculty-acronym">FISIP</span>
+                        <span class="faculty-name">UNNES</span>
+                    </div>
+
+                </article>
+
+
+                <!-- HUKUM -->
+                <article class="faculty-card hukum"
+                    data-name="hukum fakultas hukum">
+
+                    <div class="faculty-info">
+                        <span class="faculty-acronym">FH</span>
+                        <span class="faculty-name">UNNES</span>
+                    </div>
+
+                </article>
+
+
+                <!-- FIK -->
+                <article class="faculty-card fik"
+                    data-name="fik fakultas ilmu keolahragaan">
+
+                    <div class="faculty-info">
+                        <span class="faculty-acronym">FIK</span>
+                        <span class="faculty-name">UNNES</span>
+                    </div>
+
+                </article>
+
+
+                <!-- FIPP -->
+                <article class="faculty-card fipp"
+                    data-name="fipp fakultas ilmu pendidikan psikologi">
+
+                    <div class="faculty-info">
+                        <span class="faculty-acronym">FIPP</span>
+                        <span class="faculty-name">UNNES</span>
+                    </div>
+
+                </article>
+
+
+                <!-- FBS -->
+                <article class="faculty-card fbs"
+                    data-name="fbs fakultas bahasa seni">
+
+                    <div class="faculty-info">
+                        <span class="faculty-acronym">FBS</span>
+                        <span class="faculty-name">UNNES</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p id="no-faculty" class="no-faculty hidden">
+                Fakultas tidak ditemukan.
+            </p>
+
+        </section>
+<!-- TOMBOL PESANAN SAYA -->
+<div class="order-floating">
+    <button class="order-button" id="order-button">
+        <span>▤</span>
+        <small>Pesanan Saya</small>
+    </button>
+</div>
+
+        
+        
+<!-- BOTTOM NAVIGATION -->
+<nav class="bottom-nav">
+
+    <a href="home.html" class="nav-item active">
+        <span class="nav-icon">♧</span>
+        <span>Beranda</span>
+    </a>
+
+    <a href="#" class="nav-item">
+        <span class="nav-icon">♥</span>
+        <span>Favorit</span>
+    </a>
+
+    <a href="#" class="nav-item">
+        <span class="nav-icon">🛒</span>
+        <span>Keranjang</span>
+    </a>
+
+    <a href="#" class="nav-item">
+        <span class="nav-icon">▤</span>
+        <span>Riwayat</span>
+    </a>
+
+    <a href="akun.html" class="nav-item">
+        <span class="nav-icon">♟</span>
+        <span>Saya</span>
+    </a>
+
+</nav>
+
+    </main>
+
+    <script src="home.js"></script>
+
+</body>
+</html>

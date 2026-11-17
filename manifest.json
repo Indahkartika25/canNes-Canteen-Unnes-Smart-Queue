@@ -1,0 +1,12 @@
+
+{
+    "name": "Kantin UNNES Smart Queue",
+    "short_name": "canNes",
+    "description": "Pesan Lebih Awal, Ambil Lebih Cepat, Tanpa Antre!",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#FFF9E8",
+    "theme_color": "#EBD16A"
+}
